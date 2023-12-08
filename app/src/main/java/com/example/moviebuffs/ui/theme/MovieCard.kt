@@ -16,6 +16,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
+import com.example.moviebuffs.R
 
 @Composable
 fun MovieCard(
@@ -37,7 +38,7 @@ fun MovieCard(
         ) {
             // Image
             Image(
-                painter = painterResource(id = R.drawable.loading_img), // Replace with actual image loading logic
+                painter = painterResource(id = R.drawable.loading_img),
                 contentDescription = null,
                 modifier = Modifier
                     .padding(end = 4.dp)
@@ -80,5 +81,4 @@ fun MovieCard(
             }
         }
     }
-}
 }
